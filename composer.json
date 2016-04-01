@@ -1,0 +1,14 @@
+{
+    "name": "daehl/hos-project",
+    "type": "project",
+    "license": "CC0 1.0 Universal",
+    "authors": [
+        {
+            "name": "Maxime Allanic",
+            "email": "maxime.allanic@daehl.com"
+        }
+    ],
+    "require": {
+        "daehl/hos-project": "#master"
+    }
+}
