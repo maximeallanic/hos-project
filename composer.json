@@ -9,6 +9,16 @@
         }
     ],
     "require": {
-        "daehl/hos-framework": "dev-master"
+        "daehl/hos-framework": "dev-master",
+        "league/glide": "^1.0"
+    },
+    "autoload": {
+        "psr-0":{
+            "Luxury\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": ["Hos\\Command\\Install::execute"],
+        "generate-js-api-angular": ["Hos\\Command\\GenerateJSApi::execute"]
     }
 }

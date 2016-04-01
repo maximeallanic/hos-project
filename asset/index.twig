@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Toys</title>
+    {% stylesheets 'css/main.scss'
+        filter='compass,?yui_css'
+        output='css/all.css' %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet"/>
+    {% endstylesheets %}
+    {% javascripts 'js/main.js' %}
+    <script src="{{ asset_url }}" type="text/javascript"></script>
+    {% endjavascripts %}
+</head>
+<body>
+    Coucou
+</body>
+</html>
