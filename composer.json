@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "daehl/hos-project": "#master"
+        "daehl/hos-framework": "dev-master"
     }
 }
