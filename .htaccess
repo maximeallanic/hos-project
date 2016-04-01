@@ -1,0 +1,10 @@
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+    RewriteRule ^$ src/index.php [QSA,L]
+
+    RewriteCond %{REQUEST_URI} !^/api/doc/
+	RewriteRule ^(.*)$ src/index.php [QSA,L]
+</IfModule>
