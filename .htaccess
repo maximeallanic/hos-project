@@ -3,8 +3,9 @@ Options -MultiViews
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
-    RewriteRule ^$ src/index.php [QSA,L]
-
-    RewriteCond %{REQUEST_URI} !^/api/doc/
-	RewriteRule ^(.*)$ src/index.php [QSA,L]
+    RewriteCond %{REQUEST_URI} !^/vendor/daehl/hos-framework/index.php
+	RewriteRule ^(.*)$ vendor/daehl/hos-framework/index.php [QSA,L]
 </IfModule>
+
+ServerSignature Off
+#ServerTokens Prod
