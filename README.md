@@ -16,7 +16,10 @@
 ```
 
 ### Image API
-[API Doc](http://glide.thephpleague.com/1.0/api/quick-reference/)
+
+image/logo.png?w=300 to get Image with width of 300px and respect Aspect/Ratio
+
+[More](http://glide.thephpleague.com/1.0/api/quick-reference/)
 
 ### Improve Performance
 
