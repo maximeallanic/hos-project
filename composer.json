@@ -9,8 +9,7 @@
         }
     ],
     "require": {
-        "daehl/hos-framework": "dev-master",
-
+        "daehl/hos-framework": "dev-master"
     },
     "autoload": {
         "psr-0":{
