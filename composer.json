@@ -19,7 +19,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Hos\\Command\\Install::execute"
+            "Hos\\Command\\Install::execute",
             "mkdir app",
             "mkdir app/log",
             "mkdir app/conf",
