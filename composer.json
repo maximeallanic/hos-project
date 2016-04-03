@@ -16,6 +16,7 @@
         "zendframework/zend-config": "~2.6",
         "luracast/restler": "dev-features/swagger2.0",
         "league/glide": "^1.0",
+        "propel/propel": "~2.0@dev",
         "php": ">= 7.0.0"
     },
     "suggest":{
@@ -27,12 +28,15 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
-            "Hos\\Command\\Install::execute",
+        "post-root-package-install": [
             "mkdir app",
             "mkdir app/log",
             "mkdir app/conf",
-            "mkdir asset"
+            "mkdir asset",
+            "cp vendor/daehl/hos-framework/web/schema.xml app/conf/schema.xml"
+        ],
+        "build-sql": [
+            "Hos\\Command\\BuildSQL::execute"
         ]
     }
 }
