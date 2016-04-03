@@ -17,7 +17,8 @@
         "luracast/restler": "dev-features/swagger2.0",
         "league/glide": "^1.0",
         "propel/propel": "~2.0@dev",
-        "php": ">= 7.0.0"
+        "php": ">= 7.0.0",
+        "czproject/git-php": "^3.3"
     },
     "suggest":{
         "knplabs/gaufrette": "Manage Your File"
@@ -37,6 +38,9 @@
         ],
         "build-sql": [
             "Hos\\Command\\BuildSQL::execute"
+        ],
+        "push": [
+            "Hos\\Command\\Push::execute"
         ]
     }
 }

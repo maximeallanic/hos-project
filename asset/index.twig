@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <% stylesheets "css/main.scss" filter="compass" combine=true %>
+    <link rel="stylesheet" href="<%= asset_url %>"/>
+    <% endstylesheets %>
 </head>
 <body>
-
+    <img src="<%= 'image/cheese_grapes.png' | image({w: 100}) %>"/>
 </body>
 </html>
